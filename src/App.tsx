@@ -1,4 +1,4 @@
- import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DataTable} from 'primereact/datatable'; 
 import type{DataTablePageEvent } from 'primereact/datatable';
 import { Column } from 'primereact/column';
@@ -23,7 +23,6 @@ const App = () => {
   const [page, setPage] = useState(0); 
   const [selectedRows, setSelectedRows] = useState<Artwork[]>([]);
 
-  
   useEffect(() => {
     fetchArtworks(page);
   }, [page]);
